@@ -5,6 +5,7 @@ import './App.css'
 import FirstButton from './components/FirstButton'
 import RedButton from './components/RedButton/RedButton'
 import PropTest from './components/PropTest/PropTest'
+import UseStateButton from './components/UseStateButton/UseStateButton'
 function App() {
   const [count, setCount] = useState(0)
 
@@ -21,14 +22,9 @@ function App() {
         <PropTest firstString="Test" secondString="MySecondString" firstInt={5}  />
         <PropTest firstString="Another String" secondString="Wow this is easy" firstInt={99}  />
       </div>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
+      <div>
+        <UseStateButton/>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
   )
 }
