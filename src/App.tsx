@@ -9,6 +9,8 @@ import UseStateButton from './components/UseStateButton/UseStateButton'
 import ConditionalRender from './components/ConditionalRender/ConditionalRender'
 import ListsAndKeys from './components/ListsAndKeys/ListsAndKeys'
 
+//docker run -p 5173:5173 lukesutton0/reactexperimenting:1.0
+
 function App() {
   const [count, setCount] = useState(0)
 
