@@ -1,0 +1,25 @@
+.listPeople{
+    list-style-type: none;
+    padding-top: 5px;
+}
+
+.ulPad{
+    padding-left: 0;
+}
+
+.redText{
+    color:red;
+}
+.blueText{
+    color:blue;
+}
+.greenText{
+    color:green;
+}
+.yellowText{
+    color:rgb(160, 160, 7);
+}
+
+.reducedMargin{
+    margin:5px;
+}

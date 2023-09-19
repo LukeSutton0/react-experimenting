@@ -1,4 +1,4 @@
-import React from "react";
+
 import styles from "./propTest.module.css"
 
 interface  myInterfaceName{
