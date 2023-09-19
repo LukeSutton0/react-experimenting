@@ -1,5 +1,5 @@
 
-import styles from "./propTest.module.css"
+import styles from "./PropTest.module.css"
 
 interface  myInterfaceName{
     firstString: string;

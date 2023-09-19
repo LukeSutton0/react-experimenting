@@ -1,0 +1,8 @@
+.clickButton{
+    background-color: red;
+}
+
+.clickButton:hover{
+    background-color: rgb(243, 81, 81);
+}
+

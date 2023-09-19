@@ -7,7 +7,7 @@ function UseRefTest() {
         renderCount.current += 1
     })
 
-    const InputChange = (e : ChangeEvent<HTMLInputElement>) => {
+    const InputChange = (e : ChangeEvent<HTMLInputElement>) => {  //e = event
         const newValue = parseInt(e.target.value, 10); //base 10
         if (!isNaN(newValue)) {
         setCountNum(newValue);
@@ -23,7 +23,7 @@ function UseRefTest() {
         onChange={InputChange}
       />
         <div>Current num is {countNum}</div>
-        <div>Page rendered {renderCount.current} times</div>
+        <div>This component rendered {renderCount.current} times</div>
     </>  
   )
 }

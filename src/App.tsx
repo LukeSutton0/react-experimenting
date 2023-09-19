@@ -8,6 +8,7 @@ import ConditionalRender from './components/ConditionalRender/ConditionalRender'
 import ListsAndKeys from './components/ListsAndKeys/ListsAndKeys'
 import PassingProps from './components/PassingProps/PassingProps'
 import UseRefTest from './components/UseRefTest/UseRefTest'
+import EventHandling from './components/EventHandling/EventHandling'
 
 //docker run -p 5173:5173 lukesutton0/reactexperimenting:1.0
 
@@ -55,6 +56,10 @@ function App() {
       <hr></hr>
       <div>
         <UseRefTest/>
+      </div>
+      <hr></hr>
+      <div>
+        <EventHandling/>
       </div>
     </>
   )
