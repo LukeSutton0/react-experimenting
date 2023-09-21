@@ -9,6 +9,8 @@ import ListsAndKeys from './components/ListsAndKeys/ListsAndKeys'
 import PassingProps from './components/PassingProps/PassingProps'
 import UseRefTest from './components/UseRefTest/UseRefTest'
 import EventHandling from './components/EventHandling/EventHandling'
+import PreventDefaultBehaviour from './components/PreventDefaultBehaviour/PreventDefaultBehaviour'
+import CustomHooks from './components/CustomHooks/CustomHooks'
 
 //docker run -p 5173:5173 lukesutton0/reactexperimenting:1.0
 
@@ -60,6 +62,14 @@ function App() {
       <hr></hr>
       <div>
         <EventHandling/>
+      </div>
+      <hr></hr>
+      <div>
+        <PreventDefaultBehaviour/>
+      </div>
+      <hr></hr>
+      <div>
+        <CustomHooks/>
       </div>
     </>
   )
