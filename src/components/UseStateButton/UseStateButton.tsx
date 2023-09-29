@@ -1,7 +1,12 @@
 import React, { useState } from 'react'
 
+import styles from './UseStateButton.module.css'
+
+
+
 export default function UseStateButton() {
   const [useButtonTest, setButtonTest] = useState("defaultState");
+  const [useFavouriteColour, setFavouriteColour] = useState("white")
 
   function changeText(){
     //get current state
@@ -10,11 +15,22 @@ export default function UseStateButton() {
     });
   }
 
+  function favouriteColour(){
+    setFavouriteColour((currentState)=>{
+      return currentState === "white" ? "black":"white";
+    })
+  }
 
+  const secondButtonBackground = useFavouriteColour === 'white' ? styles.white : styles.black;
 
   return (
-    <button onClick={() => changeText()}>{useButtonTest}</button>
-  )
+    <>
+      <button onClick={() => changeText()}>{useButtonTest}</button>
+      <button onClick={() => favouriteColour()} className={secondButtonBackground}>
+        Change Background
+      </button>
+    </>
+  );
 }
 
 

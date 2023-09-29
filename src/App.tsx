@@ -11,13 +11,15 @@ import UseRefTest from './components/UseRefTest/UseRefTest'
 import EventHandling from './components/EventHandling/EventHandling'
 import PreventDefaultBehaviour from './components/PreventDefaultBehaviour/PreventDefaultBehaviour'
 import CustomHooks from './components/CustomHooks/CustomHooks'
+import UseEffectTest from './components/UseEffectTest/UseEffectTest'
+import LocalStorageHook from './components/CustomHooks/LocalStorageHook'
 
 //docker run -p 5173:5173 lukesutton0/reactexperimenting:1.0
 
 function App() {
   const [showConditionalComponent, setShowConditionalComponent] = useState(false);
   const toggleConditionalComponent = () => {setShowConditionalComponent(!showConditionalComponent);};
-
+  const [hookBoxVal, setHookBoxVal] = LocalStorageHook("wordKey","");
 
   return (
     <>
@@ -70,6 +72,17 @@ function App() {
       <hr></hr>
       <div>
         <CustomHooks/>
+      </div>
+      <div>
+        <input 
+        type = "text"
+        value={hookBoxVal as string}
+        onChange={(e => setHookBoxVal(e.target.value))}
+        />
+      </div>
+      <hr></hr>
+      <div>
+        <UseEffectTest/>
       </div>
     </>
   )

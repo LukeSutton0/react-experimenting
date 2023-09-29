@@ -16,13 +16,16 @@ export default function StatusBar() {
     window.addEventListener('offline', handleOffline);
 
     return () => { //when unmounted remove eventlisteners
-      window.removeEventListener('online', handleOnline);
-      window.removeEventListener('offline', handleOffline);
+        window.removeEventListener('online', handleOnline);
+        window.removeEventListener('offline', handleOffline);
     };
   }, []);
 
-
-
-  return <h1>{isOnline ? '✅ Online' : '❌ Disconnected'}</h1>;
+  return (
+    <>
+     <p>Custom Hooks</p>
+     <p>{isOnline ? '✅ Online' : '❌ Disconnected'}</p>
+    </>
+  )
 }
 
