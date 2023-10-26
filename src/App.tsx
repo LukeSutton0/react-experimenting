@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import './App.css'
+import styles from './App.module.css'
 import FirstButton from './components/FirstButton'
 import RedButton from './components/RedButton/RedButton'
 import PropTest from './components/PropTest/PropTest'
@@ -13,76 +13,45 @@ import PreventDefaultBehaviour from './components/PreventDefaultBehaviour/Preven
 import CustomHooks from './components/CustomHooks/CustomHooks'
 import UseEffectTest from './components/UseEffectTest/UseEffectTest'
 import LocalStorageHook from './components/CustomHooks/LocalStorageHook'
-
+import { Routes, Route, Link } from 'react-router-dom'
+import Home from './components/Home/Home'
 //docker run -p 5173:5173 lukesutton0/reactexperimenting:1.0
 
 function App() {
-  const [showConditionalComponent, setShowConditionalComponent] = useState(false);
-  const toggleConditionalComponent = () => {setShowConditionalComponent(!showConditionalComponent);};
-  const [hookBoxVal, setHookBoxVal] = LocalStorageHook("wordKey","");
-
+  
   return (
     <>
-      <h1>Vite + React</h1>
-      <hr></hr>
-      <div>
-        <FirstButton/>
-        <RedButton/>
-        <FirstButton/>
-      </div>
-      <hr></hr>
-      <div>
-        <PropTest firstString="Test" secondString="SecondString" firstInt={5}  />
-        <PropTest firstString="String" secondString="Aaaaaaaaaaaaaaaaa" firstInt={99}  />
-      </div>
-      <hr></hr>
-      <div>
-        <UseStateButton/>
-      </div>
-      <hr></hr>
-      <div>
-        <button onClick={toggleConditionalComponent}>
-          Toggle Conditional Component
-        </button>
-        {showConditionalComponent && <ConditionalRender />}
-      </div>
-      <hr></hr>
-      <div>
-        <ListsAndKeys/>
-      </div>
-      <hr></hr>
-      <div>
-        <PassingProps
-          text={{name: "Luke", id: "123xyG"}}
-          size={40}
-        />
-      </div>
-      <hr></hr>
-      <div>
-        <UseRefTest/>
-      </div>
-      <hr></hr>
-      <div>
-        <EventHandling/>
-      </div>
-      <hr></hr>
-      <div>
-        <PreventDefaultBehaviour/>
-      </div>
-      <hr></hr>
-      <div>
-        <CustomHooks/>
-      </div>
-      <div>
-        <input 
-        type = "text"
-        value={hookBoxVal as string}
-        onChange={(e => setHookBoxVal(e.target.value))}
-        />
-      </div>
-      <hr></hr>
-      <div>
-        <UseEffectTest/>
+      <nav className={styles.navbar}>
+        <ul>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/ConditionalRender">Conditional Render</Link></li>
+          <li><Link to="/CustomHooks">Custom Hooks</Link></li>
+          <li><Link to="/EventHandling">Event Handling</Link></li>
+          <li><Link to="/ListsAndKeys">Lists and Keys</Link></li>
+          <li><Link to="/PreventDefaultBehaviour">Prevent Default Behaviour</Link></li>
+          <li><Link to="/RedButton">Red Button</Link></li>
+          <li><Link to="/UseEffectTest">Use Effect Test</Link></li>
+          <li><Link to="/UseRefTest">Use Ref Test</Link></li>
+          <li><Link to="/UseStateButton">Use State Button</Link></li>
+        </ul>
+      </nav>
+      {/* //only changes part inside routes when linked clicked */}
+      <div className={styles.routes}>
+      <Routes>
+        <Route path="/" element={<Home/>} />
+        <Route path="/ConditionalRender" element={<ConditionalRender/>} />
+        <Route path="/CustomHooks" element={<CustomHooks/>} />
+        <Route path="/EventHandling" element={<EventHandling/>} />
+        <Route path="/ListsAndKeys" element={<ListsAndKeys/>} />
+        {/* <Route path="/PassingProps" element={<PassingProps/>} /> */}
+        <Route path="/PreventDefaultBehaviour" element={<PreventDefaultBehaviour/>} />
+        {/* <Route path="/PropTest" element={<PropTest/>} /> */}
+        <Route path="/RedButton" element={<RedButton/>} />
+        <Route path="/UseEffectTest" element={<UseEffectTest/>} />
+        <Route path="/UseRefTest" element={<UseRefTest/>} />
+        <Route path="/UseStateButton" element={<UseStateButton/>} />
+        <Route/>  
+      </Routes>
       </div>
     </>
   )
