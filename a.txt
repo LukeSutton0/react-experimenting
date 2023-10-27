@@ -1,0 +1,55 @@
+first button-> redbutton section
+
+
+  const [showConditionalComponent, setShowConditionalComponent] = useState(false);
+  const toggleConditionalComponent = () => {setShowConditionalComponent(!showConditionalComponent);};
+  const [hookBoxVal, setHookBoxVal] = LocalStorageHook("wordKey","");
+
+
+<PropTest firstString="Test" secondString="SecondString" firstInt={5}  />
+
+
+<PropTest firstString="String" secondString="Aaaaaaaaaaaaaaaaa" firstInt={99}  />
+
+
+<div>
+        <button onClick={toggleConditionalComponent}>
+          Toggle Conditional Component
+        </button>
+        {showConditionalComponent && <ConditionalRender />}
+      </div>
+
+
+
+<PassingProps
+          text={{name: "Luke", id: "123xyG"}}
+          size={40}
+        />
+
+
+<div>
+        <input 
+        type = "text"
+        value={hookBoxVal as string}
+        onChange={(e => setHookBoxVal(e.target.value))}
+        />
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
