@@ -1,5 +1,13 @@
 .flex{
     display:flex;
-    align-items: center;
-    justify-content: space-around;
+    align-items:end;
+}
+
+.flex h1{
+    padding:0;
+    margin:0;
+}
+.flex p{
+    margin-left: 20px;
+    margin-bottom: 0;
 }

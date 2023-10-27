@@ -11,10 +11,11 @@ function PassingProps({text,size}:{text:textInterface; size:number}) {
   
     return (
     <>
-        <div className={styles.PassingPropsPadding}>PassingProps</div>
+      <div className={styles.userInfoBlock}>
         <div className={fontSize} >Name: {text.name}</div>
         <div className={fontSize}>ID: {text.id}</div>
-        <div>Size:{size}</div>
+        <div className={fontSize}>Size:{size}</div>
+      </div>
     </>
     
   )

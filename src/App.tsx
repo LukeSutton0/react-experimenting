@@ -1,20 +1,21 @@
 import { useState } from 'react'
 import styles from './App.module.css'
-import FirstButton from './components/FirstButton'
 import RedButton from './components/RedButton/RedButton'
 import PropTest from './components/PropTest/PropTest'
 import UseStateButton from './components/UseStateButton/UseStateButton'
 import ConditionalRender from './components/ConditionalRender/ConditionalRender'
 import ListsAndKeys from './components/ListsAndKeys/ListsAndKeys'
-import PassingProps from './components/PassingProps/PassingProps'
 import UseRefTest from './components/UseRefTest/UseRefTest'
 import EventHandling from './components/EventHandling/EventHandling'
 import PreventDefaultBehaviour from './components/PreventDefaultBehaviour/PreventDefaultBehaviour'
 import CustomHooks from './components/CustomHooks/CustomHooks'
 import UseEffectTest from './components/UseEffectTest/UseEffectTest'
 import LocalStorageHook from './components/CustomHooks/LocalStorageHook'
+import PassingPropsPreset from './components/PassingProps/PassingPropsPreset'
+
 import { Routes, Route, Link } from 'react-router-dom'
 import Home from './components/Home/Home'
+import PropTestPreset from './components/PropTest/PropTestPreset'
 //docker run -p 5173:5173 lukesutton0/reactexperimenting:1.0
 
 function App() {
@@ -33,6 +34,8 @@ function App() {
           <li><Link to="/UseEffectTest">Use Effect Test</Link></li>
           <li><Link to="/UseRefTest">Use Ref Test</Link></li>
           <li><Link to="/UseStateButton">Use State Button</Link></li>
+          <li><Link to="/PassingProps">Passing Props</Link></li>
+          <li><Link to="/PropTest">Prop Test</Link></li>
         </ul>
       </nav>
       {/* //only changes part inside routes when linked clicked */}
@@ -43,9 +46,9 @@ function App() {
         <Route path="/CustomHooks" element={<CustomHooks/>} />
         <Route path="/EventHandling" element={<EventHandling/>} />
         <Route path="/ListsAndKeys" element={<ListsAndKeys/>} />
-        {/* <Route path="/PassingProps" element={<PassingProps/>} /> */}
+        <Route path="/PassingProps" element={<PassingPropsPreset/>} />
         <Route path="/PreventDefaultBehaviour" element={<PreventDefaultBehaviour/>} />
-        {/* <Route path="/PropTest" element={<PropTest/>} /> */}
+        <Route path="/PropTest" element={<PropTestPreset/>} />
         <Route path="/RedButton" element={<RedButton/>} />
         <Route path="/UseEffectTest" element={<UseEffectTest/>} />
         <Route path="/UseRefTest" element={<UseRefTest/>} />

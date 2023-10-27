@@ -1,5 +1,6 @@
 .clickButton{
     background-color: red;
+    padding:10px;
 }
 
 .clickButton:hover{
@@ -10,5 +11,10 @@
     background-color: green;
     cursor:pointer;
     width:500px;
+    height:100px;
     margin: auto;
+    margin-top: 20px;
+    padding:10px;
+    display:flex;
+    justify-content: space-around;
 }

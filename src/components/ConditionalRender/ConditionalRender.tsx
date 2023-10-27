@@ -1,7 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
+import ConditionalRenderComp from './ConditionalRenderComp';
 
 export default function ConditionalRender() {
-  return (
-    <div>ConditionalRender</div>
+  
+    const [showConditionalComponent, setShowConditionalComponent] = useState(false);
+    const toggleConditionalComponent = () => {setShowConditionalComponent(!showConditionalComponent);};
+    return (
+        <>
+            <button onClick={toggleConditionalComponent}>
+            Toggle Conditional Component
+            </button>
+            {showConditionalComponent && <ConditionalRenderComp />}
+        </>
   )
 }
