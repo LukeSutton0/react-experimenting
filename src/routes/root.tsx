@@ -1,4 +1,5 @@
 import { Link, Outlet } from "react-router-dom";
+import DarkLightButton from "../components/DarkLightButton/DarkLightButton";
 
 
 export default function Root() {
@@ -6,6 +7,7 @@ export default function Root() {
       <>
         <div id="navbar">
           <h1>Experimenting With React</h1>
+          <DarkLightButton/>
           <div>
             <Link to="buttons">Buttons</Link>
             <Link to="proptest">PropTesting</Link>
