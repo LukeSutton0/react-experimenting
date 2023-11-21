@@ -1,43 +1,26 @@
+import { Link, Outlet } from "react-router-dom";
+
+
 export default function Root() {
     return (
       <>
-        <div id="sidebar">
-          <h1>React Router Contacts</h1>
+        <div id="navbar">
+          <h1>Experimenting With React</h1>
           <div>
-            <form id="search-form" role="search">
-              <input
-                id="q"
-                aria-label="Search contacts"
-                placeholder="Search"
-                type="search"
-                name="q"
-              />
-              <div
-                id="search-spinner"
-                aria-hidden
-                hidden={true}
-              />
-              <div
-                className="sr-only"
-                aria-live="polite"
-              ></div>
-            </form>
-            <form method="post">
-              <button type="submit">New</button>
-            </form>
-          </div>
-          <nav>
-            <ul>
-              <li>
-                <a href={`/contacts/1`}>Your Name</a>
-              </li>
-              <li>
-                <a href={`/contacts/2`}>Your Friend</a>
-              </li>
-            </ul>
-          </nav>
+            <Link to="buttons">Buttons</Link>
+            <Link to="proptest">PropTesting</Link>
+            <Link to="usestatebutton">UseStateButton</Link>
+            <Link to="conditionalrender">ConditionalRender</Link>
+            <Link to="listsandkeys">ListsAndKeys</Link>
+            <Link to="passingprops">PassingProps</Link>
+            <Link to="usereftest">UseRefTest</Link>
+            <Link to="eventhandling">EventHandling</Link>
+            <Link to="preventdefaultbehaviour">PreventDefaultBehaviour</Link>
+            <Link to="customhooks">CustomHooks</Link>
+            <Link to="useeffecttest">UseEffectTest</Link>
+            </div>
         </div>
-        <div id="detail"></div>
+        <Outlet/>
       </>
     );
   }

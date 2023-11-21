@@ -28,7 +28,6 @@ function CustomButton({ onClick, children }: CustomButtonProps) { //custom butto
 }
 
 function EventHandling() {
-
   //use named object to stop propogation and still set alert desc
   const handleNormalButtonClick = (e: React.MouseEvent<HTMLButtonElement>) => {
     e.stopPropagation(); // Stop propagation here
