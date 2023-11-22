@@ -1,14 +1,15 @@
 import { Link, Outlet } from "react-router-dom";
 import DarkLightButton from "../components/DarkLightButton/DarkLightButton";
-
+import styles from './root.module.css'
 
 export default function Root() {
     return (
       <>
-        <div id="navbar">
-          <h1>Experimenting With React</h1>
+        <div className={styles.titlebar}>
+          <h1 className={styles.mainHeader}>Experimenting With React</h1>
           <DarkLightButton/>
-          <div>
+        </div>
+          <div id="navbar">
             <Link to="buttons">Buttons</Link>
             <Link to="proptest">PropTesting</Link>
             <Link to="usestatebutton">UseStateButton</Link>
@@ -21,7 +22,6 @@ export default function Root() {
             <Link to="customhooks">CustomHooks</Link>
             <Link to="useeffecttest">UseEffectTest</Link>
             </div>
-        </div>
         <Outlet/>
       </>
     );
