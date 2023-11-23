@@ -1,0 +1,17 @@
+.titlebar{
+    display:grid;
+    grid-template-columns: 1fr auto 1fr; /* Three columns: 1 fraction, auto, 1 fraction */
+    align-items: center;
+    margin:0;
+}
+
+.mainHeader{
+    grid-column: 2; /* Center the element in the second column */
+    text-align: center;
+}
+
+.darkLight{
+    grid-column: 3; /* Place the sun image in the third column */
+    justify-self: end; /* Align the image to the end (right) of its column */
+    padding-right:5%;
+}

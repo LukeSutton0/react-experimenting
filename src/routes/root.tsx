@@ -1,15 +1,15 @@
 import { Link, Outlet } from "react-router-dom";
-import DarkLightButton from "../components/DarkLightButton/DarkLightButton";
 import styles from './root.module.css'
+import MainHeader from "../components/MainHeader/MainHeader";
 
 export default function Root() {
     return (
       <>
-        <div className={styles.titlebar}>
-          <h1 className={styles.mainHeader}>Experimenting With React</h1>
-          <DarkLightButton/>
+        <div>
+          <MainHeader/>
         </div>
-          <div id="navbar">
+          <nav id="navbar">
+            <Card to="buttons"></Card>
             <Link to="buttons">Buttons</Link>
             <Link to="proptest">PropTesting</Link>
             <Link to="usestatebutton">UseStateButton</Link>
@@ -21,7 +21,7 @@ export default function Root() {
             <Link to="preventdefaultbehaviour">PreventDefaultBehaviour</Link>
             <Link to="customhooks">CustomHooks</Link>
             <Link to="useeffecttest">UseEffectTest</Link>
-            </div>
+            </nav>
         <Outlet/>
       </>
     );
