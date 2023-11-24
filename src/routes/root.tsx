@@ -1,6 +1,7 @@
 import { Link, Outlet } from "react-router-dom";
 import styles from './root.module.css'
-import MainHeader from "../components/MainHeader/MainHeader";
+import MainHeader from "../components/Main/MainHeader/MainHeader";
+import ButtonCard from "../components/LinkCards/ButtonCard/ButtonCard.tsx";
 
 export default function Root() {
     return (
@@ -8,8 +9,9 @@ export default function Root() {
         <div>
           <MainHeader/>
         </div>
-          <nav id="navbar">
-            <Card to="buttons"></Card>
+          <nav className={styles.navbar}>
+            <ButtonCard/>
+            <ButtonCard/>
             <Link to="buttons">Buttons</Link>
             <Link to="proptest">PropTesting</Link>
             <Link to="usestatebutton">UseStateButton</Link>
