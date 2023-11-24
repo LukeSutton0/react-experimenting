@@ -5,8 +5,9 @@ function ButtonCard() {
   return (
     <div className={styles.cardBody}>
         <Link to="buttons">
-            <img src="src\assets\icons8-moon-and-stars-50-black.png"></img>
+            <img src="src\assets\button.png"></img>
         </Link>
+        
     </div>
   )
 }
