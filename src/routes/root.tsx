@@ -3,16 +3,18 @@ import styles from './root.module.css'
 import MainHeader from "../components/Main/MainHeader/MainHeader";
 import ButtonCard from "../components/LinkCards/ButtonCard/ButtonCard.tsx";
 
+import ConditionalRenderCard from "../components/LinkCards/ConditionalRenderCard/ConditionalRenderCard.tsx";
+
 export default function Root() {
     return (
       <>
         <div>
           <MainHeader/>
         </div>
+        <div className={styles.centreNav}>
           <nav className={styles.navbar}>
             <ButtonCard/>
-            <ButtonCard/>
-            <Link to="buttons">Buttons</Link>
+            <ConditionalRenderCard/>
             <Link to="proptest">PropTesting</Link>
             <Link to="usestatebutton">UseStateButton</Link>
             <Link to="conditionalrender">ConditionalRender</Link>
@@ -23,7 +25,8 @@ export default function Root() {
             <Link to="preventdefaultbehaviour">PreventDefaultBehaviour</Link>
             <Link to="customhooks">CustomHooks</Link>
             <Link to="useeffecttest">UseEffectTest</Link>
-            </nav>
+          </nav>
+        </div>  
         <Outlet/>
       </>
     );
