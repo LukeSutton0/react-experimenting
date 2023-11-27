@@ -4,6 +4,7 @@ import MainHeader from "../components/Main/MainHeader/MainHeader";
 import ButtonCard from "../components/LinkCards/ButtonCard/ButtonCard.tsx";
 
 import ConditionalRenderCard from "../components/LinkCards/ConditionalRenderCard/ConditionalRenderCard.tsx";
+import PropTestCard from "../components/LinkCards/PropTestCard/PropTestCard.tsx";
 
 export default function Root() {
     return (
@@ -15,7 +16,7 @@ export default function Root() {
           <nav className={styles.navbar}>
             <ButtonCard/>
             <ConditionalRenderCard/>
-            <Link to="proptest">PropTesting</Link>
+            <PropTestCard/>
             <Link to="usestatebutton">UseStateButton</Link>
             <Link to="conditionalrender">ConditionalRender</Link>
             <Link to="listsandkeys">ListsAndKeys</Link>
