@@ -13,7 +13,7 @@ function ButtonCard() {
                 <p>Buttons</p>
               </Link>
             </div>
-            <a className={styles.cardDocs} href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button"><img src="src\assets\icons8-view-48-black.png"></img></a>
+            <a className={styles.cardDocs} target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button"><img src="src\assets\icons8-view-48-black.png"></img></a>
         </div>
         
         

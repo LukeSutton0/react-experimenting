@@ -5,6 +5,8 @@ import ButtonCard from "../components/LinkCards/ButtonCard/ButtonCard.tsx";
 
 import ConditionalRenderCard from "../components/LinkCards/ConditionalRenderCard/ConditionalRenderCard.tsx";
 import PropTestCard from "../components/LinkCards/PropTestCard/PropTestCard.tsx";
+import CustomHooks2Card from "../components/LinkCards/CustomHooks2Card/CustomHooks2Card.tsx";
+import CustomHooksCard from "../components/LinkCards/CustomHooksCard/CustomHooksCard.tsx";
 
 export default function Root() {
     return (
@@ -24,7 +26,8 @@ export default function Root() {
             <Link to="usereftest">UseRefTest</Link>
             <Link to="eventhandling">EventHandling</Link>
             <Link to="preventdefaultbehaviour">PreventDefaultBehaviour</Link>
-            <Link to="customhooks">CustomHooks</Link>
+            <CustomHooksCard/>
+            <CustomHooks2Card/>
             <Link to="useeffecttest">UseEffectTest</Link>
           </nav>
         </div>  

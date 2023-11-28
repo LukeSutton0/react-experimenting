@@ -14,7 +14,7 @@ function ConditionalRenderCard() {
                 <p>Conditional Rendering</p>
               </Link>
             </div>
-            <a className={styles.cardDocs} href="https://react.dev/learn/conditional-rendering"><img src="src\assets\icons8-view-48-black.png"></img></a>
+            <a className={styles.cardDocs} target="_blank" href="https://react.dev/learn/conditional-rendering"><img src="src\assets\icons8-view-48-black.png"></img></a>
         </div>
         
         
