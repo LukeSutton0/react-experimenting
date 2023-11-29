@@ -7,6 +7,13 @@ import ConditionalRenderCard from "../components/LinkCards/ConditionalRenderCard
 import PropTestCard from "../components/LinkCards/PropTestCard/PropTestCard.tsx";
 import CustomHooks2Card from "../components/LinkCards/CustomHooks2Card/CustomHooks2Card.tsx";
 import CustomHooksCard from "../components/LinkCards/CustomHooksCard/CustomHooksCard.tsx";
+import EventHandlingCard from "../components/LinkCards/EventHandlingCard/EventHandlingCard.tsx";
+import ListsAndKeysCard from "../components/LinkCards/ListsAndKeysCard/ListsAndKeysCard.tsx";
+import PassingPropsCard from "../components/LinkCards/PassingPropsCard/PassingPropsCard.tsx";
+import PreventDefaultBehaviourCard from "../components/LinkCards/PreventDefaultBehaviourCard/PreventDefaultBehaviourCard.tsx";
+import UseRefTestCard from "../components/LinkCards/UseRefTestCard/UseRefTestCard.tsx";
+import UseEffectTestCard from "../components/LinkCards/UseEffectTestCard/UseEffectTestCard.tsx";
+import UseStateButtonCard from "../components/LinkCards/UseStateButtonCard/UseStateButtonCard.tsx";
 
 export default function Root() {
     return (
@@ -19,16 +26,15 @@ export default function Root() {
             <ButtonCard/>
             <ConditionalRenderCard/>
             <PropTestCard/>
-            <Link to="usestatebutton">UseStateButton</Link>
-            <Link to="conditionalrender">ConditionalRender</Link>
-            <Link to="listsandkeys">ListsAndKeys</Link>
-            <Link to="passingprops">PassingProps</Link>
-            <Link to="usereftest">UseRefTest</Link>
-            <Link to="eventhandling">EventHandling</Link>
-            <Link to="preventdefaultbehaviour">PreventDefaultBehaviour</Link>
+            <UseStateButtonCard/>
+            <ListsAndKeysCard/>
+            <PassingPropsCard/>
+            <UseRefTestCard/>
+            <EventHandlingCard/>
+            <PreventDefaultBehaviourCard/>
             <CustomHooksCard/>
             <CustomHooks2Card/>
-            <Link to="useeffecttest">UseEffectTest</Link>
+            <UseEffectTestCard/>
           </nav>
         </div>  
         <Outlet/>
