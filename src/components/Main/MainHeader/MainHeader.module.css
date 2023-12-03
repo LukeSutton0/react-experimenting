@@ -8,10 +8,12 @@
 .mainHeader{
     grid-column: 2; /* Center the element in the second column */
     text-align: center;
+    font-weight: 400;
 }
 
 .darkLight{
     grid-column: 3; /* Place the sun image in the third column */
     justify-self: end; /* Align the image to the end (right) of its column */
     padding-right:5%;
+    cursor:pointer;
 }

@@ -13,16 +13,22 @@ import PreventDefaultBehaviourCard from "../components/LinkCards/PreventDefaultB
 import UseRefTestCard from "../components/LinkCards/UseRefTestCard.tsx";
 import UseEffectTestCard from "../components/LinkCards/UseEffectTestCard.tsx";
 import UseStateButtonCard from "../components/LinkCards/UseStateButtonCard.tsx";
+import { useEffect, useState } from "react";
 
 export default function Root() {
+
+    const [isDarkTheme, setIsDarkTheme] = useState<boolean>(true);
+    const handleThemeToggle = () => {
+      setIsDarkTheme((prevTheme) => !prevTheme);
+    };
     return (
       <>
         <div>
-          <MainHeader/>
+          <MainHeader isDarkTheme={isDarkTheme} onThemeToggle={handleThemeToggle}/>
         </div>
         <div className={styles.centreNav}>
           <nav className={styles.navbar}>
-            <ButtonCard/>
+            <ButtonCard isDarkTheme={isDarkTheme}/>
             <ConditionalRenderCard/>
             <PropTestCard/>
             <UseStateButtonCard/>

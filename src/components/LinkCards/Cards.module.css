@@ -1,10 +1,11 @@
 .cardBody{
     background-color: rgba(255, 255, 255, 0.05); 
+    
     display:grid;
     grid-template-columns: 60% 1fr;
     grid-template-rows: 75% 1fr;
     max-width: 160px;
-    max-height: 220px;
+    max-height: 210px;
     padding:10px;
 }
 
@@ -12,44 +13,51 @@
     grid-column: 1 / span 3;
     grid-row: 1 / span 3;
     height:160px;
+    margin-bottom: 10px;
 }
 .cardImage img{
     background-color: rgba(255, 255, 255, 0.03); 
     object-fit: cover;
     width:100%;
-    height:100%;    
+    height:100%;
     border-radius: 0.3%;
     transition: filter 0.3s ease;
     filter: brightness(100%);
+    border-radius: 2%;
 }
 
 .cardImage:hover img {
-    filter: brightness(80%); /* Adjust the brightness level as needed */
+    filter: brightness(60%); /* Adjust the brightness level as needed */
 }
 
 .cardTitle{
     /* grid-column: 1 / span 2; */
     grid-column: span 2;
-    transition: filter 0.3s ease;
-    filter: brightness(100%);
-}
-.cardTitle:hover{
-    filter: brightness(80%);
+    height:60px;
 }
 
 .cardTitle p{
     border-radius: 5px;
     padding-right: 5px;
     width: fit-content;
-    margin-top:5px;
     margin-left:0px;
+    margin:0;
+    transition: filter 0.3s ease;
+    filter: brightness(100%);
+    font-size: 0.9rem;
 }
+
+.cardTitle p:hover{
+    filter: brightness(80%);
+}
+
 
 .cardDocs{
     grid-column: 3;
     display:flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     transition: filter 0.3s ease;
     filter: brightness(100%);
 }
@@ -59,5 +67,5 @@
 
 
 .cardDocs img{
-    width:70%;
+    width:55%;
 }

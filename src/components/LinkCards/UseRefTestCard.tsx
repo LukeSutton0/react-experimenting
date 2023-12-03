@@ -6,7 +6,7 @@ function UseRefTestCard() {
     <>
         <div  className={styles.cardBody}>
             <Link to="usereftest" className={styles.cardImage}>
-              <img src="src\assets\cardspecific\useRefTest.png"></img>
+              <img src="src\assets\cardspecific\useRefTest.jpg"></img>
               {/* https://www.folio3.com/mobile/blog/how-to-use-useref-hook-efficiently-react/ */}
             </Link>
             <div className={styles.cardTitle}>
