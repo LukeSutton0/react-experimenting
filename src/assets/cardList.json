@@ -1,0 +1,163 @@
+
+{
+  "name" : "cardList",
+  "cards" :[
+    {
+      "cardName": "button",
+      "cardProperties": {
+        "linkTo": "buttons",
+        "img": {
+          "url" : "button.png",
+          "altText" : "An image of a red button"
+        },
+        "title":"Buttons",
+        "docsLink":"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button"
+      }
+    },
+    {
+      "cardName": "conditionalRender",
+      "cardProperties": {
+        "linkTo": "conditionalrender",
+        "img": {
+          "url": "conditionalRender.jpg",
+          "altText": "Image of person writing flowchart diagram"
+        },
+        "title": "Conditional Rendering",
+        "docsLink": "https://react.dev/learn/conditional-rendering"
+      }
+    },
+    {
+      "cardName": "customHooks2",
+      "cardProperties": {
+        "linkTo": "customhooks2",
+        "img": {
+          "url": "hook2.png",
+          "altText": "Image of fish on hook"
+        },
+        "title": "Custom Hooks Two",
+        "docsLink": "https://react.dev/learn/reusing-logic-with-custom-hooks"
+      }
+    },
+    {
+      "cardName": "customHooks",
+      "cardProperties": {
+        "linkTo": "customhooks",
+        "img": {
+          "url": "customHook.jpg",
+          "altText": "Image of fishing hook"
+        },
+        "title": "Custom Hooks",
+        "docsLink": "https://react.dev/learn/reusing-logic-with-custom-hooks"
+      }
+    },
+    {
+      "cardName": "eventHandling",
+      "cardProperties": {
+        "linkTo": "eventhandling",
+        "img": {
+          "url": "eventHandling.jpg",
+          "altText": "Image of people sat at conference event"
+        },
+        "title": "Event Handling",
+        "docsLink": "https://react.dev/learn/responding-to-events"
+      }
+    },
+    {
+      "cardName": "listsAndKeys",
+      "cardProperties": {
+        "linkTo": "listsandkeys",
+        "img": {
+          "url": "listsAndKeys.jpg",
+          "altText": "Image of keys on table"
+        },
+        "title": "Lists and Keys",
+        "docsLink": "https://react.dev/learn/rendering-lists"
+      }
+    },
+    {
+      "cardName": "passingProps",
+      "cardProperties": {
+        "linkTo": "passingprops",
+        "img": {
+          "url": "passingProps.jpg",
+          "altText": "Movie props on table"
+        },
+        "title": "Passing Props",
+        "docsLink": "https://react.dev/learn/passing-props-to-a-component"
+      }
+    },
+    {
+      "cardName": "preventDefaultBehaviour",
+      "cardProperties": {
+        "linkTo": "preventdefaultbehaviour",
+        "img": {
+          "url": "preventDefaultBehaviour.jpg",
+          "altText": "Viking shield"
+        },
+        "title": "Prevent Default Behaviour",
+        "docsLink": "https://react.dev/learn/responding-to-events#preventing-default-behavior"
+      }
+    },
+    {
+      "cardName": "propTest",
+      "cardProperties": {
+        "linkTo": "proptest",
+        "img": {
+          "url": "propTest.png",
+          "altText": "Code IDE with prop insertion"
+        },
+        "title": "Prop Test",
+        "docsLink": "https://react.dev/learn/passing-props-to-a-component"
+      }
+    },
+    {
+      "cardName": "useEffectTest",
+      "cardProperties": {
+        "linkTo": "useeffecttest",
+        "img": {
+          "url": "useEffectTest.jpg",
+          "altText": "Firework Effect"
+        },
+        "title": "Use Effect",
+        "docsLink": "https://react.dev/reference/react/useEffect"
+      }
+    },
+    {
+      "cardName": "useRefTest",
+      "cardProperties": {
+        "linkTo": "usereftest",
+        "img": {
+          "url": "useRefTest.jpg",
+          "altText": "Use Ref documentation"
+        },
+        "title": "Use Ref",
+        "docsLink": "https://react.dev/reference/react/useRef"
+      }
+    },
+    {
+      "cardName": "useStateButton",
+      "cardProperties": {
+        "linkTo": "usestatebutton",
+        "img": {
+          "url": "useStateButton.jpg",
+          "altText": "Traffic light"
+        },
+        "title": "Use State Button",
+        "docsLink": "https://react.dev/reference/react/useState"
+      }
+    },
+    {
+      "cardName": "",
+      "cardProperties": {
+        "linkTo": "",
+        "img": {
+          "url": "",
+          "altText": ""
+        },
+        "title": "",
+        "docsLink": ""
+      }
+    }
+  ]
+}
+  
