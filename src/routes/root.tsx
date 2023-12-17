@@ -1,4 +1,4 @@
-import { Link, Outlet } from "react-router-dom";
+import {Outlet } from "react-router-dom";
 import styles from './root.module.css'
 import MainHeader from "../components/Main/MainHeader/MainHeader";
 import CardHandler from "../components/CardHandler.tsx"
@@ -19,6 +19,7 @@ export default function Root() {
         const response = await fetch("/src/assets/cardList.json");
         const data = await response.json();
         setCardList(data);
+        console.log(data);
       } catch (error) {
         console.error("Error fetching cards:", error);
       }
