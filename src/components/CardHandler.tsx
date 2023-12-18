@@ -36,25 +36,23 @@ const CardHandler = ({isDarkTheme, cardList}:CardListProps) => {
   // }
 
   return (
-    <div>
-      {cardList.flatMap((item, index) =>
-        item.cards.map((card, cardIndex) => (
-          <div key={index * cardList.length + cardIndex} className={styles.cardBody}>
-            <Link to={card.cardProperties.linkTo} className={styles.cardImage}>
-              <img src={`src/assets/cardspecific/${card.cardProperties.img.url}`} alt={card.cardProperties.img.altText} />
+    <>
+      {cardList.cards.map((card, index) => (
+        <div key={index} className={styles.cardBody}>
+          <Link to={card.cardProperties.linkTo} className={styles.cardImage}>
+            <img src={`src/assets/cardspecific/${card.cardProperties.img.url}`} alt={card.cardProperties.img.altText} />
+          </Link>
+          <div className={styles.cardTitle}>
+            <Link to={card.cardProperties.linkTo}>
+              <p>{card.cardProperties.title}</p>
             </Link>
-            <div className={styles.cardTitle}>
-              <Link to={card.cardProperties.linkTo}>
-                <p>{card.cardProperties.title}</p>
-              </Link>
-            </div>
-            <a className={styles.cardDocs} target="_blank" href={card.cardProperties.docsLink}>
-              <img src="src/assets/icons8-view-48-black.png" alt="View Docs" />
-            </a>
           </div>
-        ))
-      )}
-    </div>
+          <a className={styles.cardDocs} target="_blank" rel="noopener noreferrer" href={card.cardProperties.docsLink}>
+            <img src="src/assets/icons8-view-48-black.png" alt="View Docs" />
+          </a>
+        </div>
+      ))}
+    </>
   );
 };
 

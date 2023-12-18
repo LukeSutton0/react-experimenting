@@ -8,18 +8,17 @@ import { useEffect, useState } from "react";
 export default function Root() {
 
     const [isDarkTheme, setIsDarkTheme] = useState<boolean>(true);
-    const [cardList, setCardList] = useState([]);
+    const [cardList, setCardList] = useState({name : 'string' , cards: [] }); // Initialize with an empty object
 
     const handleThemeToggle = () => {
       setIsDarkTheme((prevTheme) => !prevTheme);
     };
-
     const fetchCards = async () => {
       try {
         const response = await fetch("/src/assets/cardList.json");
         const data = await response.json();
-        setCardList(data);
-        console.log(data);
+        const modifiedData = { ...data, cards: data.cards.slice(0, -1) };
+        setCardList(modifiedData);
       } catch (error) {
         console.error("Error fetching cards:", error);
       }
