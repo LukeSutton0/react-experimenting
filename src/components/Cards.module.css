@@ -1,5 +1,5 @@
 .cardBody{
-    background-color: rgba(255, 255, 255, 0.05); 
+    background-color: #ffffff0d; 
     
     display:grid;
     grid-template-columns: 60% 1fr;

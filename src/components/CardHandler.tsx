@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link} from 'react-router-dom';
 import styles from './Cards.module.css';
 
@@ -21,19 +21,32 @@ interface Card {
 interface CardListProps {
   isDarkTheme: boolean;
   cardList: {
-    name: string;
-    cards: Card[]; // This should be an array
+    name: string; //name of cardlist (not = cardName)
+    cards: Card[]; // array
   };
 }
 
 
 const CardHandler = ({isDarkTheme, cardList}:CardListProps) => {
-  console.log(cardList);
+  // console.log(cardList);
+  const [viewDocsImage, setViewDocsImage] = useState("src/assets/icons8-view-48-black.png");
+  const backgroundColours = {
+    black: '#ffffff0d',
+    white: '#0000000d',
+  }
+  const [cardBodyColour,setCardBodyColour] = useState(backgroundColours.black);
+  
 
-  // const isValidData = cardList.every(item => Array.isArray(item.cards));
-  // if (!isValidData) {
-  //   console.error('One or more items in cardList.cards are not arrays:', cardList);
-  // }
+  useEffect(() => {
+    console.log("Dark theme button card",isDarkTheme)
+    // Update the image source based on dark mode
+    const updatedImage = isDarkTheme ? 'src/assets/icons8-view-48-black.png': 'src/assets/icons8-view-48.png';
+    const updatedCardBodyColour = isDarkTheme? backgroundColours.black : backgroundColours.white; 
+    setViewDocsImage(updatedImage);
+    setCardBodyColour(updatedCardBodyColour);
+    // document.cardBody.style.background = cardBodyColour;
+
+  }, [isDarkTheme]);
 
   return (
     <>
@@ -48,7 +61,7 @@ const CardHandler = ({isDarkTheme, cardList}:CardListProps) => {
             </Link>
           </div>
           <a className={styles.cardDocs} target="_blank" rel="noopener noreferrer" href={card.cardProperties.docsLink}>
-            <img src="src/assets/icons8-view-48-black.png" alt="View Docs" />
+            <img src={viewDocsImage} alt="View Docs" />
           </a>
         </div>
       ))}
