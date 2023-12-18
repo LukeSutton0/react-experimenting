@@ -21,8 +21,6 @@ In the app there is multiple images which load relevant components that explore 
 
 • Documentation links for each header.
 
-• 
-
 
 
 
