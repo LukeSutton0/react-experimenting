@@ -1,33 +1,58 @@
 Repo for experimenting with React, Typescript and Vite. Components, props and other react functions are implemented.
+# React Experimenting
+**Overview**
+
+This repo started off as a static way for me to mess around with the different parts of React. It then evolved into messing around with dark mode and colours and various other parts of MERN.
+
+In the app there is multiple images which load relevant components that explore the different parts of React found from this roadmap: https://roadmap.sh/react
+
+
+**CURRENT 18/12/2023 Screenshot of main UI:**
+
+<img src="![image](https://github.com/LukeSutton0/react-experimenting/assets/80263461/a55757dc-c7ce-4805-b29b-6e58b9ca693f)
+" width="400">
+
+
+
+** CURRENT 18/12/2023 Features** 
+
+• Allows users to select different main parts of React
+
+• Slightly relevant images chosen for each part.
+
+• Documentation links for each header.
+
+• 
+
+
+
+
+**Setup and Installation**
+
+TODO: create up to date docker image.
+
+**TO BE COMPLETED**
 
 
 
 
 
-# React + TypeScript + Vite
+**Usage and Details**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Once you have the webapp working feel free to browse the different sections and try the interactable buttons. 
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**ChangeLog & Roadmap**
 
-## Expanding the ESLint configuration
+Final release TBD.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Project Improvements TO DO:
 
-- Configure the top-level `parserOptions` property like this:
+• Create docker image for download simplicity.
+• Style actual page contents
+• Scaling + WCAG guidelines
+• JEST testing
+• Add more React features from roadmap
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Future Scope:
+• Add Mongo DB support and interactivity
