@@ -11,6 +11,7 @@ In the app there is multiple images which load relevant components that explore 
 
 <img src="https://github.com/LukeSutton0/react-experimenting/assets/80263461/a55757dc-c7ce-4805-b29b-6e58b9ca693f" width="400">
 
+</br>
 
 
 **CURRENT 18/12/2023 Features** 
@@ -21,17 +22,14 @@ In the app there is multiple images which load relevant components that explore 
 
 • Documentation links for each header.
 
-
+</br>
 **Setup and Installation**
 
 TODO: create up to date docker image.
 
 **TO BE COMPLETED**
 
-
-
-
-
+</br></br>
 **Usage and Details**
 
 Once you have the webapp working feel free to browse the different sections and try the interactable buttons. 
