@@ -9,8 +9,7 @@ In the app there is multiple images which load relevant components that explore 
 
 **CURRENT 18/12/2023 Screenshot of main UI:**
 
-<img src="![image](https://github.com/LukeSutton0/react-experimenting/assets/80263461/a55757dc-c7ce-4805-b29b-6e58b9ca693f)
-" width="400">
+<img src="![image](https://github.com/LukeSutton0/react-experimenting/assets/80263461/a55757dc-c7ce-4805-b29b-6e58b9ca693f)" width="400">
 
 
 
