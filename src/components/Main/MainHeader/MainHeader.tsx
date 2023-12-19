@@ -10,10 +10,8 @@ function MainHeader({isDarkTheme,onThemeToggle}:MainHeaderProps) {
     const [currentImage, setCurrentImage] = useState('./src/assets/icons8-sun-50.png');
 
     useEffect(() => {
-      console.log('isDarkTheme changed:', isDarkTheme);
       document.documentElement.style.setProperty('--background-color', isDarkTheme ? '#121212' : '#FFFFFF');
       document.documentElement.style.setProperty('--text-color', isDarkTheme ? 'rgba(255, 255, 255, 0.87)' : '#121212');
-
     }, [isDarkTheme]);
 
 
