@@ -41,7 +41,7 @@ Final release TBD.
 
 Project Improvements TO DO:
 
-• Create docker image for download simplicity.
+• Create docker image for download simplicity. - https://docs.docker.com/docker-hub/builds/
 • Style actual page contents
 • Scaling + WCAG guidelines
 • JEST testing
