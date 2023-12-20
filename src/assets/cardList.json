@@ -7,7 +7,7 @@
       "cardProperties": {
         "linkTo": "buttons",
         "img": {
-          "url" : "button.png",
+          "url" : "button-min.png",
           "altText" : "An image of a red button"
         },
         "title":"Buttons",
@@ -19,7 +19,7 @@
       "cardProperties": {
         "linkTo": "conditionalrender",
         "img": {
-          "url": "conditionalRender.jpg",
+          "url": "conditionalRender-min.jpg",
           "altText": "Image of person writing flowchart diagram"
         },
         "title": "Conditional Rendering",
@@ -31,7 +31,7 @@
       "cardProperties": {
         "linkTo": "customhooks2",
         "img": {
-          "url": "hook2.png",
+          "url": "hook2-min.png",
           "altText": "Image of fish on hook"
         },
         "title": "Custom Hooks Two",
@@ -43,7 +43,7 @@
       "cardProperties": {
         "linkTo": "customhooks",
         "img": {
-          "url": "customHook.jpg",
+          "url": "customHook-min.jpg",
           "altText": "Image of fishing hook"
         },
         "title": "Custom Hooks",
@@ -55,7 +55,7 @@
       "cardProperties": {
         "linkTo": "eventhandling",
         "img": {
-          "url": "eventHandling.jpg",
+          "url": "eventHandling-min.jpg",
           "altText": "Image of people sat at conference event"
         },
         "title": "Event Handling",
@@ -67,7 +67,7 @@
       "cardProperties": {
         "linkTo": "listsandkeys",
         "img": {
-          "url": "listsAndKeys.jpg",
+          "url": "listsAndKeys-min.jpg",
           "altText": "Image of keys on table"
         },
         "title": "Lists and Keys",
@@ -79,7 +79,7 @@
       "cardProperties": {
         "linkTo": "passingprops",
         "img": {
-          "url": "passingProps.jpg",
+          "url": "passingProps-min.jpg",
           "altText": "Movie props on table"
         },
         "title": "Passing Props",
@@ -91,7 +91,7 @@
       "cardProperties": {
         "linkTo": "preventdefaultbehaviour",
         "img": {
-          "url": "preventDefaultBehaviour.jpg",
+          "url": "preventDefaultBehaviour-min.jpg",
           "altText": "Viking shield"
         },
         "title": "Prevent Default Behaviour",
@@ -103,7 +103,7 @@
       "cardProperties": {
         "linkTo": "proptest",
         "img": {
-          "url": "propTest.png",
+          "url": "propTest-min.png",
           "altText": "Code IDE with prop insertion"
         },
         "title": "Prop Test",
@@ -115,7 +115,7 @@
       "cardProperties": {
         "linkTo": "useeffecttest",
         "img": {
-          "url": "useEffectTest.jpg",
+          "url": "useEffectTest-min.jpg",
           "altText": "Firework Effect"
         },
         "title": "Use Effect",
@@ -127,7 +127,7 @@
       "cardProperties": {
         "linkTo": "usereftest",
         "img": {
-          "url": "useRefTest.jpg",
+          "url": "useRefTest-min.jpg",
           "altText": "Use Ref documentation"
         },
         "title": "Use Ref",
@@ -139,7 +139,7 @@
       "cardProperties": {
         "linkTo": "usestatebutton",
         "img": {
-          "url": "useStateButton.jpg",
+          "url": "useStateButton-min.jpg",
           "altText": "Traffic light"
         },
         "title": "Use State Button",

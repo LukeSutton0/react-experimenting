@@ -36,8 +36,11 @@ export default function Root() {
           <nav className={styles.navbar}>
             <CardHandler isDarkTheme={isDarkTheme} cardList={cardList} />
           </nav>
-        </div>  
-        <Outlet/>
+        </div> 
+        <div>
+          <Outlet/>
+        </div> 
+        
       </>
     );
   }
