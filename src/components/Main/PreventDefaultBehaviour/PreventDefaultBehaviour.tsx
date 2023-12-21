@@ -2,7 +2,7 @@ import React from 'react'
 
 function PreventDefaultBehaviour() {
   return (
-    <>
+    <div>
         <div>PreventDefaultBehaviour</div>
         <form onSubmit={e => {
             e.preventDefault();
@@ -11,7 +11,7 @@ function PreventDefaultBehaviour() {
             <input />
             <button>Send</button>
         </form>
-    </>
+    </div>
   )
 }
 

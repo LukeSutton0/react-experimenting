@@ -3,10 +3,12 @@ import PassingProps from './PassingProps'
 
 function PassingPropsHandler() {
   return (
-    <PassingProps
+    <div>
+      <PassingProps
           text={{name: "Luke", id: "123xyG"}}
           size={40}
         />
+    </div>
   )
 }
 

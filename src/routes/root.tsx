@@ -3,6 +3,7 @@ import styles from './root.module.css'
 import MainHeader from "../components/Main/MainHeader/MainHeader";
 import CardHandler from "../components/CardHandler.tsx"
 import { useEffect, useState } from "react";
+import ConsoleLogger from "../components/Main/ConsoleLogger/ConsoleLogger.tsx";
 
 
 export default function Root() {
@@ -37,10 +38,10 @@ export default function Root() {
             <CardHandler isDarkTheme={isDarkTheme} cardList={cardList} />
           </nav>
         </div> 
-        <div>
-          <Outlet/>
-        </div> 
-        
+        <div className={styles.mainBody}>
+            <Outlet/>
+            <ConsoleLogger/>
+        </div>
       </>
     );
   }

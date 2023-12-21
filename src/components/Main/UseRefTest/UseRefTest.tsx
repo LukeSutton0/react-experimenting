@@ -15,7 +15,7 @@ function UseRefTest() {
     };
 
   return (
-    <>
+    <div>
         <div>useRefTest</div>
         <input
         type="number"
@@ -24,7 +24,7 @@ function UseRefTest() {
       />
         <div>Current num is {countNum}</div>
         <div>This component rendered {renderCount.current} times</div>
-    </>  
+    </div>  
   )
 }
 

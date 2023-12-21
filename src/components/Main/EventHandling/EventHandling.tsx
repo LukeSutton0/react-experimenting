@@ -14,15 +14,17 @@ interface CustomButtonProps {
 
 function CustomButton({ onClick, children }: CustomButtonProps) { //custom button
   return (
-    <button
-      className={styles.clickButton}
-      onClick={(e) => {
-        e.stopPropagation();
-        onClick(e);
-      }}
-    >
-      {children}
-    </button>
+    <div>
+      <button
+        className={styles.clickButton}
+        onClick={(e) => {
+          e.stopPropagation();
+          onClick(e);
+        }}
+      >
+        {children}
+      </button>
+    </div>
   );
 }
 

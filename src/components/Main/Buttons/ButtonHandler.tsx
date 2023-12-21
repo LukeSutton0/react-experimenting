@@ -4,11 +4,11 @@ import RedButton from './RedButton/RedButton'
 
 function ButtonHandler() {
   return (
-    <>
-    <FirstButton/>
-    <RedButton/>
-    <FirstButton/>
-    </>
+    <div>
+      <FirstButton/>
+      <RedButton/>
+      <FirstButton/>
+    </div>
   )
 }
 

@@ -2,7 +2,6 @@
     display:Flex;
     justify-content: center; /* Horizontally center the container */
 }
-
 .navbar{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -10,4 +9,16 @@
     width: 100%; /* Make the grid take up the full width of its container */
     padding: 20px; /* Add padding to the grid container as needed */
     gap:10px;
+}
+
+.mainBody{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    min-height:200px;
+    background-color: white;
+    color:black;
+    margin-left: 15%;
+    margin-right:15%;
+    margin-top:10%;
+    margin-bottom:30%;
 }

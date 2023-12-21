@@ -8,21 +8,17 @@ interface MainHeaderProps {
 
 function MainHeader({isDarkTheme,onThemeToggle}:MainHeaderProps) {
     const [currentImage, setCurrentImage] = useState('./src/assets/icons8-sun-50.png');
-
     useEffect(() => {
       document.documentElement.style.setProperty('--background-color', isDarkTheme ? '#121212' : '#FFFFFF');
       document.documentElement.style.setProperty('--text-color', isDarkTheme ? 'rgba(255, 255, 255, 0.87)' : '#121212');
     }, [isDarkTheme]);
-
-
-
     const handleButtonClick = () => {
         // Check the current image and swap to the other one
         const newImage = currentImage === './src/assets/icons8-sun-50.png' ? './src/assets/icons8-sun-50-black.png' : './src/assets/icons8-sun-50.png';
         setCurrentImage(newImage);
         onThemeToggle(); //Call the onThemeToggle prop to update the theme in the Root component
       };
-
+      
   return (
     <div className={styles.titlebar}>
         <h1 className={styles.mainHeader}>Experimenting With React</h1>
