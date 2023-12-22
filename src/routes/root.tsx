@@ -2,15 +2,15 @@ import {Outlet } from "react-router-dom";
 import styles from './root.module.css'
 import MainHeader from "../components/Main/MainHeader/MainHeader";
 import CardHandler from "../components/CardHandler.tsx"
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import ConsoleLogger from "../components/Main/ConsoleLogger/ConsoleLogger.tsx";
 
 
 export default function Root() {
 
     const [isDarkTheme, setIsDarkTheme] = useState<boolean>(true);
-    const [cardList, setCardList] = useState({name : 'string' , cards: [] }); // Initialize with an empty object
-
+    const [cardList, setCardList] = useState({name : "", cards: [] }); // Initialize with an empty object
+    const mainOutputRef = useRef(null);
     const handleThemeToggle = () => {
       setIsDarkTheme((prevTheme) => !prevTheme);
     };
@@ -35,12 +35,14 @@ export default function Root() {
         </div>
         <div className={styles.centreNav}>
           <nav className={styles.navbar}>
-            <CardHandler isDarkTheme={isDarkTheme} cardList={cardList} />
+            <CardHandler isDarkTheme={isDarkTheme}  mainOutputRef={mainOutputRef} cardList={cardList}/>
           </nav>
         </div> 
-        <div className={styles.mainBody}>
+        <div ref={mainOutputRef} className={styles.mainBodyWrapper}>
+          <div className={styles.mainBody}>
             <Outlet/>
             <ConsoleLogger/>
+          </div>
         </div>
       </>
     );

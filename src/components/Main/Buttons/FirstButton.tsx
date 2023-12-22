@@ -1,6 +1,11 @@
 function FirstButton() {
+
+    const onButtonClick = () => {
+        console.log("You clicked Button 1")
+    };
+
     return (
-      <button>First button</button>
+      <button onClick={onButtonClick}>Button 1</button>
     );
   }
 

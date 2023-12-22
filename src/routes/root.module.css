@@ -10,15 +10,18 @@
     padding: 20px; /* Add padding to the grid container as needed */
     gap:10px;
 }
-
+.mainBodyWrapper{
+    padding-top:5vh;
+}
 .mainBody{
     display:grid;
     grid-template-columns: 1fr 1fr;
     min-height:200px;
+    min-height:80vh;
     background-color: white;
     color:black;
     margin-left: 15%;
     margin-right:15%;
-    margin-top:10%;
-    margin-bottom:30%;
+    margin-bottom: 5vh;
+    padding:1%;
 }
