@@ -7,7 +7,7 @@
       "cardProperties": {
         "linkTo": "buttons",
         "img": {
-          "url" : "button-min.png",
+          "url" : "button-min-.png",
           "altText" : "An image of a red button"
         },
         "title":"Buttons",
