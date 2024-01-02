@@ -7,5 +7,5 @@ Link to component
 image src
     alt text for image
 Link to component
-name of section
+Name of section
 link href to documentation
