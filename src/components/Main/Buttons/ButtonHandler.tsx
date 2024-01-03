@@ -1,4 +1,3 @@
-import React from 'react'
 import FirstButton from './FirstButton'
 import RedButton from './RedButton/RedButton'
 

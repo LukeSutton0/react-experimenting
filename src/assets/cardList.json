@@ -7,7 +7,7 @@
       "cardProperties": {
         "linkTo": "buttons",
         "img": {
-          "url" : "button-min-.png",
+          "url" : "button-place.jpg",
           "altText" : "An image of a red button"
         },
         "title":"Buttons",
@@ -19,7 +19,7 @@
       "cardProperties": {
         "linkTo": "conditionalrender",
         "img": {
-          "url": "conditionalRender-min.jpg",
+          "url": "conditionalRender.jpg",
           "altText": "Image of person writing flowchart diagram"
         },
         "title": "Conditional Rendering",
