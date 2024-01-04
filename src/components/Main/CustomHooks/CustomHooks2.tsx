@@ -1,4 +1,3 @@
-import React from 'react'
 import LocalStorageHook from './LocalStorageHook';
 
 export default function CustomHooks2() {

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useLocation} from 'react-router-dom';
 import styles from './ConsoleLogger.module.css'
 
@@ -25,7 +25,7 @@ const location = useLocation();
 
   useEffect(() =>{
     // console.log("location change")
-    setConsoleLogs((prevLogs) => []);
+    setConsoleLogs(() => []);
   }, [location]);
 
   return (

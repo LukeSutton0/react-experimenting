@@ -48,7 +48,7 @@ function EventHandling() {
     e.stopPropagation(); // Stop propagation here
     alert('Message for button 3');
   };
-  const handleNormalButtonClickPropogation = (e: React.MouseEvent<HTMLButtonElement>) => {
+  const handleNormalButtonClickPropogation = () => {
     //e.stopPropagation(); // propogation not stopped
     alert('Message for button 3');
   }; 

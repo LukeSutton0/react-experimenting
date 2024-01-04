@@ -1,4 +1,3 @@
-import React from 'react'
 import PropTest from './PropTest'
 function PropTestHandler() {
   return (

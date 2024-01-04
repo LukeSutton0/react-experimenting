@@ -1,0 +1,14 @@
+name : cardlist,
+cards: [
+    cardName
+    cardPropeties {
+        link to component route
+        image
+            url
+            alt text for image
+            background colour
+        Title (name of section)
+        link to offical documentation
+    },
+(more cards)
+]

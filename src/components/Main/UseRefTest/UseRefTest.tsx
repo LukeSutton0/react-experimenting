@@ -1,4 +1,4 @@
-import React, {useState,useRef,useEffect, ChangeEvent} from "react"
+import {useState,useRef,useEffect, ChangeEvent} from "react"
 
 function UseRefTest() {
     const [countNum, setCountNum] = useState(0)

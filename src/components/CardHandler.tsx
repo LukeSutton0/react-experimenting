@@ -8,6 +8,7 @@ interface CardProperties {
   img: {
     url: string;
     altText: string;
+    lazyColour: string;
   };
   title: string;
   docsLink: string;

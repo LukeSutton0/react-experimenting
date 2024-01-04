@@ -1,4 +1,3 @@
-import React from 'react'
 import PassingProps from './PassingProps'
 
 function PassingPropsHandler() {

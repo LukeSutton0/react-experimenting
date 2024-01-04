@@ -8,7 +8,8 @@
         "linkTo": "buttons",
         "img": {
           "url" : "button-place.jpg",
-          "altText" : "An image of a red button"
+          "altText" : "An image of a red button",
+          "lazyColour" : "#daaba9"
         },
         "title":"Buttons",
         "docsLink":"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button"
@@ -20,7 +21,8 @@
         "linkTo": "conditionalrender",
         "img": {
           "url": "conditionalRender.jpg",
-          "altText": "Image of person writing flowchart diagram"
+          "altText": "Image of person writing flowchart diagram",
+          "lazyColour" : ""
         },
         "title": "Conditional Rendering",
         "docsLink": "https://react.dev/learn/conditional-rendering"
@@ -32,7 +34,8 @@
         "linkTo": "customhooks2",
         "img": {
           "url": "hook2-min.png",
-          "altText": "Image of fish on hook"
+          "altText": "Image of fish on hook",
+          "lazyColour" : ""
         },
         "title": "Custom Hooks Two",
         "docsLink": "https://react.dev/learn/reusing-logic-with-custom-hooks"
@@ -44,7 +47,8 @@
         "linkTo": "customhooks",
         "img": {
           "url": "customHook-min.jpg",
-          "altText": "Image of fishing hook"
+          "altText": "Image of fishing hook",
+          "lazyColour" : ""
         },
         "title": "Custom Hooks",
         "docsLink": "https://react.dev/learn/reusing-logic-with-custom-hooks"
@@ -56,7 +60,8 @@
         "linkTo": "eventhandling",
         "img": {
           "url": "eventHandling-min.jpg",
-          "altText": "Image of people sat at conference event"
+          "altText": "Image of people sat at conference event",
+          "lazyColour" : ""
         },
         "title": "Event Handling",
         "docsLink": "https://react.dev/learn/responding-to-events"
@@ -68,7 +73,8 @@
         "linkTo": "listsandkeys",
         "img": {
           "url": "listsAndKeys-min.jpg",
-          "altText": "Image of keys on table"
+          "altText": "Image of keys on table",
+          "lazyColour" : ""
         },
         "title": "Lists and Keys",
         "docsLink": "https://react.dev/learn/rendering-lists"
@@ -80,7 +86,8 @@
         "linkTo": "passingprops",
         "img": {
           "url": "passingProps-min.jpg",
-          "altText": "Movie props on table"
+          "altText": "Movie props on table",
+          "lazyColour" : ""
         },
         "title": "Passing Props",
         "docsLink": "https://react.dev/learn/passing-props-to-a-component"
@@ -92,7 +99,8 @@
         "linkTo": "preventdefaultbehaviour",
         "img": {
           "url": "preventDefaultBehaviour-min.jpg",
-          "altText": "Viking shield"
+          "altText": "Viking shield",
+          "lazyColour" : ""
         },
         "title": "Prevent Default Behaviour",
         "docsLink": "https://react.dev/learn/responding-to-events#preventing-default-behavior"
@@ -104,7 +112,8 @@
         "linkTo": "proptest",
         "img": {
           "url": "propTest-min.png",
-          "altText": "Code IDE with prop insertion"
+          "altText": "Code IDE with prop insertion",
+          "lazyColour" : ""
         },
         "title": "Prop Test",
         "docsLink": "https://react.dev/learn/passing-props-to-a-component"
@@ -116,7 +125,8 @@
         "linkTo": "useeffecttest",
         "img": {
           "url": "useEffectTest-min.jpg",
-          "altText": "Firework Effect"
+          "altText": "Firework Effect",
+          "lazyColour" : ""
         },
         "title": "Use Effect",
         "docsLink": "https://react.dev/reference/react/useEffect"
@@ -128,7 +138,8 @@
         "linkTo": "usereftest",
         "img": {
           "url": "useRefTest-min.jpg",
-          "altText": "Use Ref documentation"
+          "altText": "Use Ref documentation",
+          "lazyColour" : ""
         },
         "title": "Use Ref",
         "docsLink": "https://react.dev/reference/react/useRef"
@@ -140,7 +151,8 @@
         "linkTo": "usestatebutton",
         "img": {
           "url": "useStateButton-min.jpg",
-          "altText": "Traffic light"
+          "altText": "Traffic light",
+          "lazyColour" : ""
         },
         "title": "Use State Button",
         "docsLink": "https://react.dev/reference/react/useState"
@@ -152,7 +164,8 @@
         "linkTo": "",
         "img": {
           "url": "",
-          "altText": ""
+          "altText": "",
+          "lazyColour" : ""
         },
         "title": "",
         "docsLink": ""
