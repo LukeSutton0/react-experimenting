@@ -22,10 +22,10 @@ export default function StatusBar() {
   }, []);
 
   return (
-    <>
+    <div>
      <p>Custom Hooks</p>
      <p>{isOnline ? '✅ Online' : '❌ Disconnected'}</p>
-    </>
+    </div>
   )
 }
 

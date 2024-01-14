@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 
 import styles from './UseStateButton.module.css'
 
@@ -24,12 +24,12 @@ export default function UseStateButton() {
   const secondButtonBackground = useFavouriteColour === 'white' ? styles.white : styles.black;
 
   return (
-    <>
+    <div>
       <button onClick={() => changeText()}>{useButtonTest}</button>
       <button onClick={() => favouriteColour()} className={secondButtonBackground}>
         Change Background
       </button>
-    </>
+    </div>
   );
 }
 

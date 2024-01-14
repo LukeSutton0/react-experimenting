@@ -14,15 +14,17 @@ interface CustomButtonProps {
 
 function CustomButton({ onClick, children }: CustomButtonProps) { //custom button
   return (
-    <button
-      className={styles.clickButton}
-      onClick={(e) => {
-        e.stopPropagation();
-        onClick(e);
-      }}
-    >
-      {children}
-    </button>
+    <div>
+      <button
+        className={styles.clickButton}
+        onClick={(e) => {
+          e.stopPropagation();
+          onClick(e);
+        }}
+      >
+        {children}
+      </button>
+    </div>
   );
 }
 
@@ -46,7 +48,7 @@ function EventHandling() {
     e.stopPropagation(); // Stop propagation here
     alert('Message for button 3');
   };
-  const handleNormalButtonClickPropogation = (e: React.MouseEvent<HTMLButtonElement>) => {
+  const handleNormalButtonClickPropogation = () => {
     //e.stopPropagation(); // propogation not stopped
     alert('Message for button 3');
   }; 

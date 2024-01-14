@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 
 function UseEffectTest() {
@@ -20,7 +20,7 @@ function UseEffectTest() {
   },[resourceType])
 
   return (
-    <>
+    <div>
       <div>
         <p>UseEffect expreimenting with API</p>
         <button onClick={()=> setResourceType('posts')}>Posts</button>
@@ -32,7 +32,7 @@ function UseEffectTest() {
           return <pre>{JSON.stringify(item)}</pre>
         })}
       </div>
-    </>
+    </div>
   );
 }
 

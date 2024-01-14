@@ -1,14 +1,10 @@
-import React from 'react';
 import styles from './redButton.module.css'
-import FirstButton from './FirstButton'
 
 function RedButton(){
     return(
-        <>
-            <FirstButton/>
-            <button className={styles.redButton} onClick={()=> console.log("Red")}>Red Button</button>
-            <FirstButton/>
-        </>
+        <div>
+            <button className={styles.redButton} onClick={()=> console.log("You clicked the Red Button")}>Red Button</button>
+        </div>
     )
 }
 export default RedButton;
