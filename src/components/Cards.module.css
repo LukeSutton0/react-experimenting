@@ -1,12 +1,11 @@
 .cardBody{
-    
-    
     display:grid;
     grid-template-columns: 60% 1fr;
     grid-template-rows: 75% 1fr;
     max-width: 160px;
     max-height: 210px;
     padding:10px;
+    box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.1), 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
 .cardImage{
