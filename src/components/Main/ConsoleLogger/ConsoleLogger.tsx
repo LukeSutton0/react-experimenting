@@ -30,7 +30,7 @@ const location = useLocation();
 
   return (
     <div className={styles.consoleLogWrapper}>
-      <h2>Console Logs:</h2>
+      <h3>Console Logs:</h3>
       <ul>
         {consoleLogs.map((log, index) => (
           <li key={index} className={styles.logStyle}>{log}</li>

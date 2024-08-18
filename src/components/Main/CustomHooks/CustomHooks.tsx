@@ -24,6 +24,7 @@ export default function StatusBar() {
   return (
     <div>
      <p>Custom Hooks</p>
+     <p>Are you currently connected to a network?</p>
      <p>{isOnline ? '✅ Online' : '❌ Disconnected'}</p>
     </div>
   )

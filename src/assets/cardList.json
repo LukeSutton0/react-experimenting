@@ -7,7 +7,7 @@
       "cardProperties": {
         "linkTo": "buttons",
         "img": {
-          "url" : "button-place.jpg",
+          "url" : "button.webp",
           "altText" : "An image of a red button",
           "lazyColour" : "#daaba9"
         },
@@ -20,7 +20,7 @@
       "cardProperties": {
         "linkTo": "conditionalrender",
         "img": {
-          "url": "conditionalRender.jpg",
+          "url": "conditionalRender.webp",
           "altText": "Image of person writing flowchart diagram",
           "lazyColour" : ""
         },
@@ -33,7 +33,7 @@
       "cardProperties": {
         "linkTo": "customhooks2",
         "img": {
-          "url": "hook2-min.png",
+          "url": "hook2.webp",
           "altText": "Image of fish on hook",
           "lazyColour" : ""
         },
@@ -46,7 +46,7 @@
       "cardProperties": {
         "linkTo": "customhooks",
         "img": {
-          "url": "customHook-min.jpg",
+          "url": "customHook.webp",
           "altText": "Image of fishing hook",
           "lazyColour" : ""
         },
@@ -59,7 +59,7 @@
       "cardProperties": {
         "linkTo": "eventhandling",
         "img": {
-          "url": "eventHandling-min.jpg",
+          "url": "eventHandling.webp",
           "altText": "Image of people sat at conference event",
           "lazyColour" : ""
         },
@@ -72,7 +72,7 @@
       "cardProperties": {
         "linkTo": "listsandkeys",
         "img": {
-          "url": "listsAndKeys-min.jpg",
+          "url": "listsAndKeys.webp",
           "altText": "Image of keys on table",
           "lazyColour" : ""
         },
@@ -85,7 +85,7 @@
       "cardProperties": {
         "linkTo": "passingprops",
         "img": {
-          "url": "passingProps-min.jpg",
+          "url": "passingProps.webp",
           "altText": "Movie props on table",
           "lazyColour" : ""
         },
@@ -98,7 +98,7 @@
       "cardProperties": {
         "linkTo": "preventdefaultbehaviour",
         "img": {
-          "url": "preventDefaultBehaviour-min.jpg",
+          "url": "preventDefaultBehaviour.webp",
           "altText": "Viking shield",
           "lazyColour" : ""
         },
@@ -111,7 +111,7 @@
       "cardProperties": {
         "linkTo": "proptest",
         "img": {
-          "url": "propTest-min.png",
+          "url": "propTest.webp",
           "altText": "Code IDE with prop insertion",
           "lazyColour" : ""
         },
@@ -124,7 +124,7 @@
       "cardProperties": {
         "linkTo": "useeffecttest",
         "img": {
-          "url": "useEffectTest-min.jpg",
+          "url": "useEffectTest.webp",
           "altText": "Firework Effect",
           "lazyColour" : ""
         },
@@ -137,7 +137,7 @@
       "cardProperties": {
         "linkTo": "usereftest",
         "img": {
-          "url": "useRefTest-min.jpg",
+          "url": "useRefTest.webp",
           "altText": "Use Ref documentation",
           "lazyColour" : ""
         },
@@ -150,7 +150,7 @@
       "cardProperties": {
         "linkTo": "usestatebutton",
         "img": {
-          "url": "useStateButton-min.jpg",
+          "url": "useStateButton.webp",
           "altText": "Traffic light",
           "lazyColour" : ""
         },

@@ -29,18 +29,21 @@ interface CardListProps {
 interface CardHandlerProps{
   isDarkTheme: boolean;
   mainOutputRef:React.RefObject<HTMLDivElement>;
+  onCardClick: () => void; // Add the onCardClick prop
 }
 
 
-const CardHandler = ({ isDarkTheme, mainOutputRef, cardList }: CardHandlerProps & CardListProps) => {
+const CardHandler = ({ isDarkTheme, mainOutputRef, cardList, onCardClick }: CardHandlerProps & CardListProps) => {
   // console.log(cardList);
+  
   const [viewDocsImage, setViewDocsImage] = useState("src/assets/icons8-view-48-black.png");
   const backgroundColours = {
     black: '#ffffff0d',
     white: '#0000000d'
   }
   const [cardBodyColour,setCardBodyColour] = useState(backgroundColours.black); //Could use local storage
-  
+  const [scrollTriggered, setScrollTriggered] = useState(false); // Track scroll trigger
+  const [loading, setLoading] = useState(true); // Track loading state
 
   useEffect(() => {
     // Update the image source based on dark mode
@@ -51,13 +54,36 @@ const CardHandler = ({ isDarkTheme, mainOutputRef, cardList }: CardHandlerProps 
   }, [isDarkTheme]);
 
   const handleInternalLinkClick = () => {
-    //console.log(mainOutputRef.current);
-    mainOutputRef.current?.scrollIntoView({ 
-    behavior: "smooth", 
-    block: "start", // "start" aligns the element to the top of the visible area
-    inline: "nearest",}); // ? = optional chaining
-  }
+    onCardClick();
+    setScrollTriggered(true); // Trigger the scroll after content update
+  };
+  
+  useEffect(() => {
+    if (scrollTriggered && mainOutputRef.current && !loading) {
+      const timeoutId = setTimeout(() => {
+        mainOutputRef.current?.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start',
+          inline: 'nearest',
+        });
+        setScrollTriggered(false); // Reset the trigger
+      }, 100); // Adjust the timeout if needed
+  
+      // Cleanup timeout if component unmounts or scroll is triggered again
+      return () => clearTimeout(timeoutId);
+    }
+  }, [scrollTriggered, mainOutputRef]);
 
+
+  useEffect(() => {
+    // Simulate a loading delay
+    const timeoutId = setTimeout(() => {
+      setLoading(false); // Finish loading
+    }, 2000); // Adjust the timeout as needed
+
+    // Cleanup timeout if component unmounts or scroll is triggered again
+    return () => clearTimeout(timeoutId);
+  }, []);
 
 
   return (
